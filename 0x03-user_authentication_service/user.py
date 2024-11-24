@@ -33,3 +33,4 @@ class User(Base):
     session_id = Column(String(250), nullable=True)
     # Nullable string column for reset_token
     reset_token = Column(String(250), nullable=True)
+    
