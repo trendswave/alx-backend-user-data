@@ -11,7 +11,7 @@ Contain the following attributes:
 """
 
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String, create_engine
+from sqlalchemy import Column, Integer, String
 
 # we create base using the declarative_base function
 # for the mapping declaration pattern to be used
@@ -33,4 +33,3 @@ class User(Base):
     session_id = Column(String(250), nullable=True)
     # Nullable string column for reset_token
     reset_token = Column(String(250), nullable=True)
-    
